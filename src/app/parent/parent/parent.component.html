@@ -1,0 +1,20 @@
+<h4 #title>View child using to inject reference to a DOM Element</h4>
+<div class="row">
+    <div class="col-md-4">
+        <!-- <form> -->
+            <div>
+                <label for= "name">Name</label>
+                <input #nameRef  name = "" value="" (keyup) = '0'>
+            </div>
+            <p><strong>You are typing..</strong></p>
+            <p><strong>{{nameRef.value}}</strong></p>
+            <!-- <button type = "submit" class= "btn btn-info">Submit</button> -->
+        <!-- </form> -->
+       
+    </div>
+   
+    <div class="col-md-4">
+        <app-child #childtemplateRef></app-child>
+    </div>
+</div>
+
